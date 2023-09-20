@@ -1,0 +1,77 @@
+/* style.css */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; /* 배경 색상을 밝은 회색으로 조정 */
+    color: #333; /* 텍스트 색상을 어두운 회색으로 설정 */
+}
+
+.slot-machine {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* 슬롯 머신 배경을 화이트로 조정 */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.betting {
+    margin-bottom: 20px;
+}
+
+.betting label {
+    font-size: 18px;
+}
+
+.betting input {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333; /* 입력 필드 텍스트 색상을 어두운 회색으로 설정 */
+}
+
+.slot {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #333;
+    margin: 0 10px;
+    font-size: 36px;
+    line-height: 150px;
+    overflow: hidden;
+    position: relative;
+    animation: spin 2s ease infinite;
+    vertical-align: top;
+    background-color: #eee; /* 칸 배경을 밝은 회색으로 조정 */
+    color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slot .fruit {
+    animation: moveUpDown 1s linear infinite;
+}
+
+#spinButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: block;
+    margin: 10px auto;
+    background-color: #eee; /* 버튼 배경을 밝은 회색으로 조정 */
+    color: #333;
+    border: 2px solid #333;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#playerBalanceDisplay {
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
